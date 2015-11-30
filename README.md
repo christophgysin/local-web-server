@@ -1,7 +1,8 @@
 [![view on npm](http://img.shields.io/npm/v/local-web-server.svg)](https://www.npmjs.org/package/local-web-server)
 [![npm module downloads per month](http://img.shields.io/npm/dm/local-web-server.svg)](https://www.npmjs.org/package/local-web-server)
 [![Dependency Status](https://david-dm.org/75lb/local-web-server.svg)](https://david-dm.org/75lb/local-web-server)
-![Analytics](https://ga-beacon.appspot.com/UA-27725889-12/local-web-server/README.md?pixel)
+
+***Use this release for support with versions of node older than v4.0.0***
 
 # local-web-server
 Fires up a simple, CORS-enabled, static web server on a given port. Use for local web development or file sharing (directory browsing enabled).
@@ -13,12 +14,12 @@ Ensure [node.js](http://nodejs.org) is installed first. Linux/Mac users may need
 
 ### Globally
 ```sh
-$ npm install -g local-web-server
+$ npm install -g local-web-server@prev
 ```
 
 ### Bundled with your project
 ```sh
-$ npm install local-web-server --save-dev
+$ npm install local-web-server@prev --save-dev
 ```
 
 Then add an `start` script to your `package.json` (the standard npm approach):
@@ -144,7 +145,7 @@ $ ws --config
 ```
 
 ## mime-types
-You can set additional mime-type/extension mappings, or override the defaults by setting a `mime` value in your local config. This value is passed directly to [mime.define()](https://github.com/broofa/node-mime#mimedefine). Example: 
+You can set additional mime-type/extension mappings, or override the defaults by setting a `mime` value in your local config. This value is passed directly to [mime.define()](https://github.com/broofa/node-mime#mimedefine). Example:
 
 ```json
 {
